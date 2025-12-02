@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BrainOverBoard • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <header class="we-header">
+    <div class="we-logo">
+      <a href="index.html">WORLD<span>EYEOPENER</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="we-nav">
+      <a href="music.html">Music</a>
+      <a href="zen.html">Zen</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="brainoverboard.html">BrainOverBoard</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>BrainOverBoard</h1>
+      <p>Chess, strategy, coding, and content—live from the WorldEyeopener mind.</p>
+    </section>
+
+    <section class="page-content">
+      <article class="card stack">
+        <h3>Watch on Site</h3>
+        <p>Catch the latest BrainOverBoard sessions directly on this page.</p>
+
+        <!-- Replace the src with your channel’s live / playlist / recent uploads URL -->
+        <div class="embed-frame">
+          <iframe src="https://www.youtube.com/embed?list=YOUR_PLAYLIST_ID" allowfullscreen></iframe>
+        </div>
+
+        <a href="https://www.youtube.com/@YOUR_BRAINOVERBOARD_HANDLE" target="_blank" class="btn primary-sm" style="margin-top:1rem;">
+          Go to BrainOverBoard on YouTube
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="we-footer">
+    <!-- footer -->
+    <div class="footer-main">
+      <div>
+        <h4>WorldEyeopener</h4>
+        <p>Thee official hub for Saint’s AI-powered universe.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brands</h4>
+        <ul>
+          <li><a href="https://your-wemir-link-here.com" target="_blank">WEMIR-Webs</a></li>
+          <li><a href="https://your-aurapro-link-here.com" target="_blank">AURAPRO AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> WorldEyeopener. All rights reserved.</p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.we-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
