@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music • WorldEyeopener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+  <!-- Include same header -->
+  <header class="we-header">
+    <div class="we-logo">
+      <a href="index.html">WORLD<span>EYEOPENER</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="we-nav">
+      <a href="music.html">Music</a>
+      <a href="zen.html">Zen</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="brainoverboard.html">BrainOverBoard</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Music</h1>
+      <p>Original tracks and soundscapes from the WorldEyeopener universe.</p>
+    </section>
+
+    <section class="page-content">
+      <div class="column-grid two">
+        <article class="card stack">
+          <h3>Latest Release</h3>
+          <p>Stream it everywhere or grab your own copy to support the movement.</p>
+          <!-- Replace with real music link or an embedded player -->
+          <div class="embed-frame">
+            <!-- Example: YouTube or SoundCloud iframe -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+          </div>
+          <a href="#" class="btn primary-sm">Buy / Download Track</a>
+        </article>
+
+        <article class="card stack">
+          <h3>Beat Pack / Instrumentals</h3>
+          <p>For creators, dancers, or anyone who wants to move with the wave.</p>
+          <p class="muted">
+            Use these beats for your own content (respecting usage rights you set).
+          </p>
+          <a href="#" class="btn ghost">Browse Beat Packs</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="we-footer">
+    <!-- same footer as index -->
+    <div class="footer-main">
+      <div>
+        <h4>WorldEyeopener</h4>
+        <p>Thee official hub for Saint’s AI-powered universe.</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:eyeopenworlds0@gmail.com">eyeopenworlds0@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Brands</h4>
+        <ul>
+          <li><a href="https://your-wemir-link-here.com" target="_blank">WEMIR-Webs</a></li>
+          <li><a href="https://your-aurapro-link-here.com" target="_blank">AURAPRO AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> WorldEyeopener. All rights reserved.</p>
+      <p><a href="terms.html">Terms of Use</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.we-nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+      });
+    }
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
